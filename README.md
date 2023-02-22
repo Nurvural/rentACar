@@ -3,7 +3,7 @@
  
  Projede verileri ekleyebilecek, silebilecek, güncelleyebilecek, listeleyebilecek, id ile getirebilecek kodlar yer alıyor.
  
- Bu kodlar tasarlanırken ModelMapper, stream, map kavramları kullanılmıştır.
+ Bu kodlar tasarlanırken ModelMapper, stream, map vb. kavramlar kullanılmıştır.
  
  
  
