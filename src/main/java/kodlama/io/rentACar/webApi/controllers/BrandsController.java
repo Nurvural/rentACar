@@ -2,6 +2,8 @@ package kodlama.io.rentACar.webApi.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -41,7 +43,7 @@ public class BrandsController {
 	}
 	@PostMapping()
 	@ResponseStatus(code = HttpStatus.CREATED)
-	public void add(@RequestBody() CreateBrandRequest createBrandRequest) {
+	public void add(@RequestBody() @Valid CreateBrandRequest createBrandRequest) {
 		this.brandService.add(createBrandRequest);
 	}
 	@PutMapping()

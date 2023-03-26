@@ -8,5 +8,7 @@ public interface BrandRepository extends JpaRepository<Brand, Integer> {
 	
    //veritabanı işleri yapacak sınıflara repo ismi verilir ya da dao verilir
 	//List<Brand> getAll(); //getall çağıran birsi markaları listeler.
+	
+	boolean existsByName(String name); //spring jpa keywords araştırma
 }
 	
